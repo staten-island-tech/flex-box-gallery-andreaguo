@@ -1,0 +1,77 @@
+html, body, *{
+    padding: 0%;
+    margin: 0%;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+ .parent{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .child{
+    width: 28%;
+ }
+/* 
+ .child {
+    padding: 1rem;
+    margin: 1rem;
+  }
+   */
+  .child-1 {
+    border: 3px solid pink;
+    height: 300px;
+  }
+  
+  .child-2 {
+    border: 3px solid orange;
+    height: 400px;
+  }
+  
+  .child-3 {
+    border: 3px solid yellow;
+    height: 600px;
+  }
+  /*  
+  html, body {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 3rem;
+    background-color: lightcoral;
+    border: 5px solid red;
+  }
+  
+  .parent-intro {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  
+  .parent-spacing {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .parent-flexconstants .child-1 {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  
+  .parent-flexconstants .child-2 {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  } 
