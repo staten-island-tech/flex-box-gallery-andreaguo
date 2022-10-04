@@ -1,11 +1,15 @@
 .header {
   background-color: palevioletred;
   color: #fff;
-  height: 95vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.header-img {
+  height: 30vh;
 }
 
 .header-title {
@@ -13,12 +17,8 @@
   text-align: center;
 }
 
-img {
-  height: 3rem;
-}
-
 .about {
-  height: 100vh;
+  height: 75vh;
   background-color: rgb(255, 160, 204);
   display: flex;
   flex-direction: row;
@@ -37,13 +37,15 @@ img {
 }
 
 .about-col {
-  background-color: #f36fb7;
+  background-color: rgb(231, 126, 166);
   height: 90%;
   width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  border-radius: 15px;
+  box-shadow: 12px 12px 2px 1px rgb(179, 85, 121);
 }
 
 .about-img {
@@ -54,6 +56,7 @@ img {
   font-size: 3rem;
   text-align: center;
   padding: 2.2rem;
+  color: white;
 }
 
 .about-box {
@@ -69,4 +72,6 @@ html, body, * {
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: "Caveat", cursive;
+  font-style: italic;
 }/*# sourceMappingURL=main.css.map */

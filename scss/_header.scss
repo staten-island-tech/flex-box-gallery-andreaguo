@@ -4,9 +4,12 @@
 .header{
     background-color: palevioletred;
     color: #fff;
-    height: 95vh;
+    height: 60vh;
     @include flex-col-center;
     justify-content: center;
+}
+.header-img{
+    height: 30vh;
 }
 .header-title{
     font-size: 8rem;

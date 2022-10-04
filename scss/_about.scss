@@ -1,13 +1,11 @@
 @import "_variables";
 @import "_mixins";
-img{
-    height: 3rem;
-}
+
 .about {
-    height: 100vh;
+    height: 75vh;
     background-color: rgb(255, 160, 204);
     @include flex-row-center;
-    justify-content: space-around
+    justify-content: space-around;
 }
 .about-row{
     @include flex-row-center;
@@ -17,11 +15,13 @@ img{
     margin: 0 auto;
 }
 .about-col{
-    background-color: #f36fb7;
+    background-color: rgb(231, 126, 166);
     height: 90%;
     width: 25%;
     @include flex-col-center;
     justify-content: space-evenly;
+    border-radius: 15px;
+    box-shadow: 12px 12px 2px 1px rgb(179, 85, 121);
 }
 .about-img{
     height: 25%;
@@ -30,6 +30,7 @@ img{
     font-size: 3rem;
     text-align: center;
     padding: 2.2rem;
+    color: white;
 }
 .about-box{
     background-image: url(friends.jpg);
