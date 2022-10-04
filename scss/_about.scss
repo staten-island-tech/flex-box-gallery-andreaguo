@@ -6,15 +6,19 @@
     background-color: rgb(255, 160, 204);
     @include flex-row-center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
-.about-row{
+
+.about-row {
     @include flex-row-center;
     justify-content: space-between;
     height: 100%;
     width: 85vw;
     margin: 0 auto;
+
 }
-.about-col{
+
+.about-col {
     background-color: rgb(231, 126, 166);
     height: 90%;
     width: 25%;
@@ -22,17 +26,21 @@
     justify-content: space-evenly;
     border-radius: 15px;
     box-shadow: 12px 12px 2px 1px rgb(179, 85, 121);
+
 }
-.about-img{
+
+.about-img {
     height: 25%;
 }
-.about-text{
+
+.about-text {
     font-size: 3rem;
     text-align: center;
     padding: 2.2rem;
     color: white;
 }
-.about-box{
+
+.about-box {
     background-image: url(friends.jpg);
     height: 30%;
     width: 80%;

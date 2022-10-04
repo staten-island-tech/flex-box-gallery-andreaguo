@@ -1,17 +1,23 @@
 @import "_variables";
 @import "_mixins";
 
-.header{
+.header {
     background-color: palevioletred;
     color: #fff;
     height: 60vh;
     @include flex-col-center;
     justify-content: center;
 }
-.header-img{
+
+.header-img {
     height: 30vh;
 }
-.header-title{
+
+.header2-img {
+    height: 15vh;
+}
+
+.header-title {
     font-size: 8rem;
     text-align: center;
 }
