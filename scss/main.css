@@ -17,10 +17,6 @@
   height: 30vh;
 }
 
-.X {
-  font-size: 8rem;
-}
-
 .header2-img {
   height: 7vh;
   margin-left: 5rem;
@@ -28,69 +24,45 @@
 
 .header-title {
   font-size: 8rem;
-  text-align: center;
 }
 
 .about {
-  height: 75vh;
   background-color: rgb(255, 160, 204);
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-}
-
-.about-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  width: 85vw;
-  margin: 0 auto;
 }
 
 .about-col {
   background-color: rgb(231, 126, 166);
-  height: 90%;
-  width: 25%;
+  height: 500px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   border-radius: 15px;
   box-shadow: 12px 12px 2px 1px rgb(179, 85, 121);
+  margin: 3rem 2rem;
 }
 
 .about-img {
-  height: 25%;
+  height: 40%;
 }
 
 .about-text {
   font-size: 3rem;
   text-align: center;
-  padding: 2.2rem;
   color: white;
 }
 
-.about-box {
-  background-image: url(friends.jpg);
-  height: 30%;
-  width: 80%;
-  background-size: cover;
-  background-position: center;
-}
-
-html,
-body,
-* {
+html, body, * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Caveat", cursive;
   font-style: italic;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
