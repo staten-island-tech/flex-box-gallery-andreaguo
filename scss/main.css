@@ -15,11 +15,21 @@
 
 .header-img {
   height: 30vh;
+  transition: all 0.3s;
+}
+
+.header-img:hover {
+  transform: scale(1.2);
 }
 
 .header2-img {
   height: 7vh;
   margin-left: 5rem;
+  transition: all 0.3s;
+}
+
+.header2-img:hover {
+  transform: scale(1.2);
 }
 
 .header-title {
@@ -46,6 +56,11 @@
   border-radius: 15px;
   box-shadow: 12px 12px 2px 1px rgb(179, 85, 121);
   margin: 3rem 2rem;
+  transition: all 0.3s;
+}
+
+.about-col:hover {
+  transform: scale(1.1);
 }
 
 .about-img {
@@ -58,15 +73,11 @@
   color: white;
 }
 
-html,
-body,
-* {
+html, body, * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Caveat", cursive;
   font-style: italic;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

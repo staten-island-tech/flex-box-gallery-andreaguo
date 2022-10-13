@@ -15,10 +15,20 @@
 
 .header-img {
     height: 30vh;
+    transition: all 0.3s;
+}
+
+.header-img:hover{
+    transform: scale(1.2);
 }
 .header2-img {
     height: 7vh;
     margin-left: 5rem;
+    transition: all 0.3s;
+}
+
+.header2-img:hover{
+    transform: scale(1.2);
 }
 
 .header-title {

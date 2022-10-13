@@ -17,6 +17,11 @@
     border-radius: 15px;
     box-shadow: 12px 12px 2px 1px rgb(179, 85, 121);
     margin: 3rem 2rem;
+    transition: all 0.3s;
+}
+
+.about-col:hover{
+    transform: scale(1.1);
 }
 
 .about-img {
@@ -26,5 +31,5 @@
 .about-text {
     font-size: 3rem;
     text-align: center;
-    color: white;
+    color: white;  
 }

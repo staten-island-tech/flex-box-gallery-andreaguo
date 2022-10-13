@@ -1,0 +1,30 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  .gallery-parent {
+    margin: 0 auto;
+    height: 60rem;
+    width: 40rem;
+  }
+  
+  .demo-photo {
+    height: 20rem;
+  }
+  
+  .form::before{
+    content: "\26C4";
+    font-size: 2rem;
+  }
+
+  .button {
+    transition: all 0.3s;
+  }
+
+  .button:hover{
+    transform: scale(1.5);
+  }
+  
