@@ -36,6 +36,46 @@
   font-size: 8rem;
 }
 
+.header-title:not(hover) {
+  -webkit-animation-name: changingcolor;
+          animation-name: changingcolor;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes changingcolor {
+  0% {
+    color: red;
+  }
+  40% {
+    color: cornflowerblue;
+  }
+  70% {
+    color: palegoldenrod;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes changingcolor {
+  0% {
+    color: red;
+  }
+  40% {
+    color: cornflowerblue;
+  }
+  70% {
+    color: palegoldenrod;
+  }
+  100% {
+    color: white;
+  }
+}
 .about {
   background-color: rgb(255, 160, 204);
   display: flex;

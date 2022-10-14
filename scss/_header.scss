@@ -18,19 +18,46 @@
     transition: all 0.3s;
 }
 
-.header-img:hover{
+.header-img:hover {
     transform: scale(1.2);
 }
+
 .header2-img {
     height: 7vh;
     margin-left: 5rem;
     transition: all 0.3s;
 }
 
-.header2-img:hover{
+.header2-img:hover {
     transform: scale(1.2);
 }
 
 .header-title {
     font-size: 8rem;
+}
+
+.header-title:not(hover) {
+    animation-name: changingcolor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes changingcolor {
+    0% {
+        color: red;
+    }
+
+    40% {
+        color: cornflowerblue
+    }
+
+    70% {
+        color: palegoldenrod;
+    }
+
+    100% {
+        color: white;
+    }
+
 }
