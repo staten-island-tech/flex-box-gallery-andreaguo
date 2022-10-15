@@ -19,7 +19,7 @@ html {
     content: "\26C4";
     font-size: 2rem;
   }
-
+  
   .button {
     transition: all 0.3s;
   }
@@ -27,4 +27,3 @@ html {
   .button:hover{
     transform: scale(1.5);
   }
-  

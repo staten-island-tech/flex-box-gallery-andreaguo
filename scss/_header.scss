@@ -2,7 +2,6 @@
 
 .header {
     background-color: palevioletred;
-    color: #fff;
     height: 60vh;
     @include flex-col-center;
     justify-content: center;
@@ -14,22 +13,30 @@
 }
 
 .header-img {
+    display: inline-block;
+    vertical-align: middle;
     height: 30vh;
     transition: all 0.3s;
+    transform: perspective(1px) translateZ(0);
+    transition-property: transform;
 }
 
 .header-img:hover {
-    transform: scale(1.2);
+    transform: translateX(-3rem);
 }
 
 .header2-img {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
     height: 7vh;
     margin-left: 5rem;
     transition: all 0.3s;
+    transition-property: transform;
 }
 
 .header2-img:hover {
-    transform: scale(1.2);
+    transform: translateX(3rem);
 }
 
 .header-title {
@@ -37,27 +44,23 @@
 }
 
 .header-title:not(hover) {
-    animation-name: changingcolor;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation: changingcolor 1s infinite alternate;
 }
 
 @keyframes changingcolor {
     0% {
-        color: red;
+        color: peachpuff;
     }
 
     40% {
-        color: cornflowerblue
+        color: pink;
     }
 
     70% {
-        color: palegoldenrod;
+        color: rgb(255, 192, 217);
     }
 
     100% {
-        color: white;
+        color: rgb(235, 164, 188);
     }
-
 }

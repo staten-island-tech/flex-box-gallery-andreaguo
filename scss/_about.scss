@@ -8,7 +8,7 @@
     flex-wrap: wrap;
 }
 
-.about-col {
+.about-row {
     background-color: rgb(231, 126, 166);
     height: 500px;
     width: 30%;
@@ -17,11 +17,66 @@
     border-radius: 15px;
     box-shadow: 12px 12px 2px 1px rgb(179, 85, 121);
     margin: 3rem 2rem;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
-.about-col:hover {
-    transform: scale(1.1);
+.about-row:hover {
+    transform: scale(1);
+    outline: 0.3rem solid white;
+}
+
+.about-row:not(:hover){
+    transform: scale(0.8);
+    opacity: 0.7;
+}
+
+.about-row2 {
+    background-color: rgb(231, 126, 166);
+    height: 500px;
+    width: 30%;
+    @include flex-col-center;
+    justify-content: space-around;
+    border-radius: 15px;
+    box-shadow: 12px 12px 2px 1px rgb(179, 85, 121);
+    margin: 3rem 2rem;
+    transition: all 0.5s;
+}
+
+.about-row2:hover {
+    transform: scale(0.7);
+    outline: 0.3rem solid white;
+}
+
+.about-row2:not(:hover){
+    transform: scale(0.8);
+    opacity: 0.7;
+}
+
+.about-row3 {
+    background-color: rgb(231, 126, 166);
+    height: 500px;
+    width: 30%;
+    @include flex-col-center;
+    justify-content: space-around;
+    border-radius: 15px;
+    margin: 3rem 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition: all 0.5s;
+    transition-property: box-shadow;
+}
+
+.about-row3:hover {
+    transform: scale(0.8);
+    box-shadow: 0 0 40px rgb(139, 51, 85);
+    outline: 0.3rem solid white;
+}
+
+.about-row3:not(:hover){
+    transform: scale(0.8);
+    opacity: 0.7;
 }
 
 .about-img {
