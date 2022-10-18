@@ -11,7 +11,7 @@
 .about-row {
     background-color: rgb(231, 126, 166);
     height: 500px;
-    width: 30%;
+    width: 30em;
     @include flex-col-center;
     justify-content: space-around;
     border-radius: 15px;
@@ -64,15 +64,18 @@
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     transition: all 0.5s;
-    transition-property: box-shadow;
-    opacity: 0.7;
-    transform: scale(0.8);
+    // transition-property: box-shadow;
 }
 
 .about-row3:hover {
-    transform: 0.5s scale(0.7);
+    transform: scale(0.7);
     box-shadow: 0 0 100px rgb(139, 51, 85);
     outline: 0.3rem solid white;
+}
+
+.about-row3:not(:hover) {
+    transform: scale(0.8);
+    opacity: 0.7;
 }
 
 .about-img {
