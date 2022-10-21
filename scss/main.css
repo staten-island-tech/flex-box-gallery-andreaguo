@@ -16,6 +16,7 @@
   display: inline-block;
   vertical-align: middle;
   transition: all 0.3s;
+  height: 35vh;
   transform: perspective(1px) translateZ(0);
   transition-property: transform;
 }
@@ -44,22 +45,19 @@
 
 .header-title:not(hover) {
   -webkit-animation: changingcolor 1s infinite alternate;
-  animation: changingcolor 1s infinite alternate;
+          animation: changingcolor 1s infinite alternate;
 }
 
 @-webkit-keyframes changingcolor {
   0% {
     color: peachpuff;
   }
-
   40% {
     color: pink;
   }
-
   70% {
     color: rgb(255, 192, 217);
   }
-
   100% {
     color: rgb(235, 164, 188);
   }
@@ -69,20 +67,16 @@
   0% {
     color: peachpuff;
   }
-
   40% {
     color: pink;
   }
-
   70% {
     color: rgb(255, 192, 217);
   }
-
   100% {
     color: rgb(235, 164, 188);
   }
 }
-
 .about {
   background-color: rgb(255, 160, 204);
   display: flex;
@@ -94,8 +88,8 @@
 
 .about-row {
   background-color: rgb(231, 126, 166);
-  height: 500px;
-  width: 30%;
+  height: 80vh;
+  width: 30vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,19 +101,19 @@
 }
 
 .about-row:hover {
-  transform: scale(1);
+  transform: scale(0.8);
   outline: 0.3rem solid white;
 }
 
 .about-row:not(:hover) {
-  transform: scale(0.8);
+  transform: scale(0.7);
   opacity: 0.7;
 }
 
 .about-row2 {
   background-color: rgb(231, 126, 166);
-  height: 500px;
-  width: 30%;
+  height: 80vh;
+  width: 30vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,19 +125,19 @@
 }
 
 .about-row2:hover {
-  transform: scale(0.7);
+  transform: scale(0.6);
   outline: 0.3rem solid white;
 }
 
 .about-row2:not(:hover) {
-  transform: scale(0.8);
+  transform: scale(0.7);
   opacity: 0.7;
 }
 
 .about-row3 {
   background-color: rgb(231, 126, 166);
-  height: 500px;
-  width: 30%;
+  height: 80vh;
+  width: 30vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -168,7 +162,7 @@
 }
 
 .about-img {
-  height: 40%;
+  height: 35vh;
   display: flex;
   justify-content: center;
 }
@@ -179,9 +173,7 @@
   color: white;
 }
 
-html,
-body,
-* {
+html, body, * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -190,4 +182,126 @@ body,
   font-style: italic;
 }
 
-/*# sourceMappingURL=main.css.map */
+@media all and (max-width: 480px) {
+  .header {
+    height: 30vh;
+  }
+  .header-title {
+    font-size: 4rem;
+  }
+  .header-img {
+    height: 10vh;
+    width: 40vw;
+  }
+  .header-img:hover {
+    transform: translateX(-1rem);
+  }
+  .header2-img {
+    margin-left: 3rem;
+    height: 2vh;
+    width: 25vw;
+  }
+  .header2-img:hover {
+    transform: translateX(1rem);
+  }
+  .about-row {
+    font-size: 0.5rem;
+    height: 60vh;
+    width: 95vw;
+  }
+  .about-row2 {
+    font-size: 0.5rem;
+    height: 60vh;
+    width: 95vw;
+  }
+  .about-row3 {
+    font-size: 0.5rem;
+    height: 60vh;
+    width: 95vw;
+  }
+  .about-img {
+    height: 18vh;
+    width: 80vw;
+  }
+}
+@media all and (max-width: 767px) {
+  .header {
+    height: 30vh;
+  }
+  .header-title {
+    font-size: 6rem;
+  }
+  .header-img {
+    height: 15vh;
+    width: 40vw;
+  }
+  .header-img:hover {
+    transform: translateX(-1rem);
+  }
+  .header2-img {
+    margin-left: 3.5rem;
+    height: 3vh;
+    width: 25vw;
+  }
+  .header2-img:hover {
+    transform: translateX(1rem);
+  }
+  .about-row {
+    font-size: 0.5rem;
+    height: 45vh;
+    width: 45vw;
+  }
+  .about-row2 {
+    font-size: 0.5rem;
+    height: 45vh;
+    width: 45vw;
+  }
+  .about-row3 {
+    font-size: 0.5rem;
+    height: 45vh;
+    width: 45vw;
+  }
+  .about-img {
+    height: 15vh;
+    width: 42vw;
+  }
+}
+@media all and (max-width: 1024px) {
+  .header {
+    height: 35vh;
+  }
+  .header-title {
+    font-size: 8rem;
+  }
+  .header-img {
+    height: 22vh;
+    width: 22vw;
+  }
+  .header2-img {
+    margin-left: 5.5rem;
+    height: 5vh;
+    width: 16vw;
+  }
+  .about {
+    font-size: 7rem;
+  }
+  .about-row {
+    font-size: 0.5rem;
+    height: 70vh;
+    width: 31.7vw;
+  }
+  .about-row2 {
+    font-size: 0.5rem;
+    height: 70vh;
+    width: 31.7vw;
+  }
+  .about-row3 {
+    font-size: 0.5rem;
+    height: 70vh;
+    width: 31.7vw;
+  }
+  .about-img {
+    height: 27vh;
+    width: 31vw;
+  }
+}/*# sourceMappingURL=main.css.map */

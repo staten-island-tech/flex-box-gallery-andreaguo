@@ -16,6 +16,7 @@
     display: inline-block;
     vertical-align: middle;
     transition: all 0.3s;
+    height: 35vh;
     transform: perspective(1px) translateZ(0);
     transition-property: transform;
 }
