@@ -148,7 +148,6 @@ html, body, * {
   display: inline-block;
   vertical-align: middle;
   transition: all 0.3s;
-  height: 35vh;
   transform: perspective(1px) translateZ(0);
   transition-property: transform;
 }
@@ -176,6 +175,10 @@ html, body, * {
 }
 
 .header-title:not(hover) {
+<<<<<<< HEAD:project/style.css
+=======
+  -webkit-animation: changingcolor 1s infinite alternate;
+>>>>>>> parent of 26ef274 (asjdflw):scss/main.css
   animation: changingcolor 1s infinite alternate;
 }
 
@@ -183,12 +186,15 @@ html, body, * {
   0% {
     color: peachpuff;
   }
+
   40% {
     color: pink;
   }
+
   70% {
     color: rgb(255, 192, 217);
   }
+
   100% {
     color: rgb(235, 164, 188);
   }
@@ -198,16 +204,20 @@ html, body, * {
   0% {
     color: peachpuff;
   }
+
   40% {
     color: pink;
   }
+
   70% {
     color: rgb(255, 192, 217);
   }
+
   100% {
     color: rgb(235, 164, 188);
   }
 }
+
 .about {
   background-color: rgb(255, 160, 204);
   display: flex;
@@ -219,8 +229,8 @@ html, body, * {
 
 .about-row {
   background-color: rgb(231, 126, 166);
-  height: 80vh;
-  width: 30vw;
+  height: 500px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,19 +242,19 @@ html, body, * {
 }
 
 .about-row:hover {
-  transform: scale(0.8);
+  transform: scale(1);
   outline: 0.3rem solid white;
 }
 
 .about-row:not(:hover) {
-  transform: scale(0.7);
+  transform: scale(0.8);
   opacity: 0.7;
 }
 
 .about-row2 {
   background-color: rgb(231, 126, 166);
-  height: 80vh;
-  width: 30vw;
+  height: 500px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -256,19 +266,19 @@ html, body, * {
 }
 
 .about-row2:hover {
-  transform: scale(0.6);
+  transform: scale(0.7);
   outline: 0.3rem solid white;
 }
 
 .about-row2:not(:hover) {
-  transform: scale(0.7);
+  transform: scale(0.8);
   opacity: 0.7;
 }
 
 .about-row3 {
   background-color: rgb(231, 126, 166);
-  height: 80vh;
-  width: 30vw;
+  height: 500px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,7 +303,7 @@ html, body, * {
 }
 
 .about-img {
-  height: 35vh;
+  height: 40%;
   display: flex;
   justify-content: center;
 }
@@ -304,4 +314,18 @@ html, body, * {
   color: white;
 }
 
+<<<<<<< HEAD:project/style.css
+=======
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Caveat", cursive;
+  font-style: italic;
+}
+
+>>>>>>> parent of 26ef274 (asjdflw):scss/main.css
 /*# sourceMappingURL=main.css.map */
